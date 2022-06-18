@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgba(6, 6, 13, 0.944);
+  display: grid;
+  height: 400px;
+}
+body a{
+  color: gold;
+  font-size: large;
+  text-decoration: none;
+  padding: 2px;
+  
+
+}
+h4{
+  padding: 5px 40px;
+
+}
+h4 a{
+  color: rgb(180, 110, 18);
+  text-decoration: none;
+  font-size: 30px;
+  
+}
+main {
+  display: grid;
+  width: 120vh;
+  height: 85vh;
+  grid-template-areas:
+    "a a a b"
+    "a a a b"
+    "c c d d"
+    "c c e e";
+  gap: 17px;
+  margin: 40px 60px;
+}
+div {
+  padding: 50px;
+}
+.A {
+  background-color: orangered;
+  grid-area: a;
+}
+.B {
+  background-color: darkorange;
+  grid-area: b;
+}
+.C {
+  background-color: rgb(33, 161, 50);
+  grid-area: c;
+}
+
+.D {
+  background-color: dodgerblue;
+  grid-area: d;
+  padding: 40px;
+}
+.E {
+  background-color: dodgerblue;
+  grid-area: e;
+  padding: 70px;
+}
+@media screen and (max-width: 750px) {
+ main{
+   width: 75%;
+ }
+}
+@media screen and (min-width: 751px){
+  main{
+    width:75%;
+}
